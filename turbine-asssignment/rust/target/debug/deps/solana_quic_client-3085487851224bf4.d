@@ -1,0 +1,8 @@
+/Users/pratik/code/personal/turbine/turbine-asssignment/rust/target/debug/deps/libsolana_quic_client-3085487851224bf4.rmeta: /Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-quic-client-2.0.13/src/lib.rs /Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-quic-client-2.0.13/src/nonblocking/mod.rs /Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-quic-client-2.0.13/src/nonblocking/quic_client.rs /Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-quic-client-2.0.13/src/quic_client.rs
+
+/Users/pratik/code/personal/turbine/turbine-asssignment/rust/target/debug/deps/solana_quic_client-3085487851224bf4.d: /Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-quic-client-2.0.13/src/lib.rs /Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-quic-client-2.0.13/src/nonblocking/mod.rs /Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-quic-client-2.0.13/src/nonblocking/quic_client.rs /Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-quic-client-2.0.13/src/quic_client.rs
+
+/Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-quic-client-2.0.13/src/lib.rs:
+/Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-quic-client-2.0.13/src/nonblocking/mod.rs:
+/Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-quic-client-2.0.13/src/nonblocking/quic_client.rs:
+/Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-quic-client-2.0.13/src/quic_client.rs:

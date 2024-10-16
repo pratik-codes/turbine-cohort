@@ -1,0 +1,1 @@
+cargo:rustc-env=MIME_TYPES_GENERATED_PATH=/Users/pratik/code/personal/turbine/turbine-asssignment/rust/target/debug/build/mime_guess-f2809a40ec561c96/out/mime_types_generated.rs
