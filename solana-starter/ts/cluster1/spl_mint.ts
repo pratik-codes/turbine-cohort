@@ -55,17 +55,17 @@ const token_decimals = 1_000_000n;
 const mint = new PublicKey("4nnxB1TSfSf1PDHqavQdq12joMYH6PN3fREJ1qawEa7L");
 
 (async () => {
-    try {
-        // Create an ATA
-        const ata = await getOrCreateAssociatedTokenAccount(connection, keypair, mint, keypair.publicKey);
-        console.log(`Your ata is: ${ata.address.toBase58()}`);
+  try {
+    // Create an ATA
+    const ata = await getOrCreateAssociatedTokenAccount(connection, keypair, mint, keypair.publicKey);
+    console.log(`Your ata is: ${ata.address.toBase58()}`);
 
-        // Mint to ATA
-        const mintTx = await mintTo(connection, keypair, mint, ata.address, keypair.publicKey, token_decimals);
-        console.log(`Your mint txid: ${mintTx}`);
-    } catch(error) {
-        console.log(`Oops, something went wrong: ${error}`)
-    }
+    // Mint to ATA
+    const mintTx = await mintTo(connection, keypair, mint, ata.address, keypair.publicKey, token_decimals);
+    console.log(`Your mint txid: ${mintTx}`);
+  } catch (error) {
+    console.log(`Oops, something went wrong: ${error}`)
+  }
 })()
 
 

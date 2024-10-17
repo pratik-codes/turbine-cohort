@@ -13,33 +13,44 @@ umi.use(irysUploader());
 umi.use(signerIdentity(signer));
 
 (async () => {
-    try {
-        // Follow this JSON structure
-        // https://docs.metaplex.com/programs/token-metadata/changelog/v1.0#json-structure
+  try {
+    const image = "https://devnet.irys.xyz/3XbotbJPPqiniJVH6dS1ziedSswVdUkHimZsXdWkpSCe";
 
-        // const image = ???
-        // const metadata = {
-        //     name: "?",
-        //     symbol: "?",
-        //     description: "?",
-        //     image: "?",
-        //     attributes: [
-        //         {trait_type: '?', value: '?'}
-        //     ],
-        //     properties: {
-        //         files: [
-        //             {
-        //                 type: "image/png",
-        //                 uri: "?"
-        //             },
-        //         ]
-        //     },
-        //     creators: []
-        // };
-        // const myUri = ???
-        // console.log("Your metadata URI: ", myUri);
-    }
-    catch(error) {
-        console.log("Oops.. Something went wrong", error);
-    }
+    const metadata = {
+      name: "Pratik NFT",
+      symbol: "#",
+      description: "A nft created by Pratik",
+      image: image,
+      attributes: [
+        { trait_type: 'Background', value: 'Blue' },
+        { trait_type: 'Eyes', value: 'Glowing' }
+      ],
+      properties: {
+        files: [
+          {
+            type: "image/png",
+            uri: image
+          },
+        ]
+      },
+      creators: ["FLKwcEaLf5F67vh6QKTRYc7gXU1fdWmma9Dx5jry1Sbs"]
+    };
+
+    // Create a generic file for the metadata
+    const file = createGenericFile(JSON.stringify(metadata), 'metadata.json');
+
+    // Upload the metadata to irys and get the URI
+    const myUri = await umi.uploader.upload([file]);
+
+    console.log("Your metadata URI: ", myUri);
+  }
+  catch (error) {
+    console.log("Oops.. Something went wrong", error);
+  }
 })();
+
+// Your metadata URI:  [ 'https://devnet.irys.xyz/LdZpY92GhDFZTMbKYaTiPA6doTgaAVG7VTxcxg3Fh1t' ]
+// {"name":"Pratik NFT","symbol":"#","description":"A nft created by Pratik","image":"https://devnet.irys.xyz/3XbotbJPPqiniJVH6dS1ziedSswVdUkHimZsXdWkpSCe","attributes":[{"trait_type":"Background","value":"Blue"},{"trait_type":"Eyes","value":"Glowing"}],"properties":{"files":[{"type":"image/png","uri":"https://devnet.irys.xyz/3XbotbJPPqiniJVH6dS1ziedSswVdUkHimZsXdWkpSCe"}]},"creators":["FLKwcEaLf5F67vh6QKTRYc7gXU1fdWmma9Dx5jry1Sbs"]}
+
+
+

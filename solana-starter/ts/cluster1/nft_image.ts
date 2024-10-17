@@ -14,17 +14,22 @@ umi.use(irysUploader());
 umi.use(signerIdentity(signer));
 
 (async () => {
-    try {
-        //1. Load image
-        //2. Convert image to generic file.
-        //3. Upload image
+  try {
 
-        // const image = ???
+    const image = await readFile("/Users/pratik/code/personal/turbine/solana-starter/ts/generug.png");
+    const genImg = createGenericFile(image, "rug", {
+      contentType: "image/png"
+    });
 
-        // const [myUri] = ??? 
-        // console.log("Your image URI: ", myUri);
-    }
-    catch(error) {
-        console.log("Oops.. Something went wrong", error);
-    }
+    const [uri] = await umi.uploader.upload([genImg]);
+
+    console.log("Your image URI: ", uri);
+  }
+  catch (error) {
+    console.log("Oops.. Something went wrong", error);
+  }
 })();
+
+// OUTPUT:
+// Mint Address:  DdY8VvJTwtGP4BH7S3h65XHCXhNjj8d1bxe5vR943jie
+// https://devnet.irys.xyz/3XbotbJPPqiniJVH6dS1ziedSswVdUkHimZsXdWkpSCe
