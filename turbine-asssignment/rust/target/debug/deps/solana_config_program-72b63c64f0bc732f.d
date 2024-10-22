@@ -1,8 +1,0 @@
-/Users/pratik/code/personal/turbine/turbine-asssignment/rust/target/debug/deps/libsolana_config_program-72b63c64f0bc732f.rmeta: /Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-config-program-2.0.13/src/lib.rs /Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-config-program-2.0.13/src/config_instruction.rs /Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-config-program-2.0.13/src/config_processor.rs /Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-config-program-2.0.13/src/date_instruction.rs
-
-/Users/pratik/code/personal/turbine/turbine-asssignment/rust/target/debug/deps/solana_config_program-72b63c64f0bc732f.d: /Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-config-program-2.0.13/src/lib.rs /Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-config-program-2.0.13/src/config_instruction.rs /Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-config-program-2.0.13/src/config_processor.rs /Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-config-program-2.0.13/src/date_instruction.rs
-
-/Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-config-program-2.0.13/src/lib.rs:
-/Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-config-program-2.0.13/src/config_instruction.rs:
-/Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-config-program-2.0.13/src/config_processor.rs:
-/Users/pratik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-config-program-2.0.13/src/date_instruction.rs:
